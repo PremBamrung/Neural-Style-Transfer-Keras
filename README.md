@@ -18,10 +18,11 @@ rename -e 's/\d+/sprintf("%03d",$&)/e' -- *.png
 
 
 ## To run the neural style transfer 
-python neural_style_transfer.py path_to_your_base_image.jpg path_to_your_reference.jpg prefix_for_results
+python3 neural_style_transfer.py path_to_your_base_image.jpg path_to_your_reference.jpg prefix_for_results
 
 With the provided exemple, it would look like this in a Google Colba notebook, with Shiba.jpg and Starry_night.jpg uploaded:
 
-python neural_style_transfer.py content/Shiba.jpg content/Starry_night.jpg content/my_result
+python3 neural_style_transfer.py content/Shiba.jpg content/Starry_night.jpg content/my_result --iter 600
 
+Optional parameters in the neural_style_transfer.py script.
 
