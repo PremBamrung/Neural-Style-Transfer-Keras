@@ -9,6 +9,8 @@ To do so, we can use a bash command. rename is used here (if not installed, sudo
 ## To rename all .png files and add  leading zero (1->01)
 rename -e 's/\d+/sprintf("%03d",$&)/e' -- *.png
 
+or use the rename_leading_zero.py script
+
 ## To create a new directory, move all files in it and zip this directory
 !mkdir Result
 
